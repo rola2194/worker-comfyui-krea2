@@ -20,12 +20,6 @@ from network_volume import (
     run_network_volume_diagnostics,
 )
 
-
-def start_serverless():
-    """Start the RunPod worker (kept near the top for GitHub detection)."""
-    runpod.serverless.start({"handler": handler})
-
-
 # ---------------------------------------------------------------------------
 # Logging setup
 # ---------------------------------------------------------------------------
@@ -1150,4 +1144,4 @@ def handler(job):
 
 if __name__ == "__main__":
     print("worker-comfyui - Starting handler...")
-    start_serverless()
+    runpod.serverless.start({"handler": handler})
