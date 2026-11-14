@@ -1,15 +1,21 @@
 {
-  "title": "ComfyUI",
-  "description": "Generate images with ComfyUI using FLUX.1-dev (fp8)",
+  "title": "Krea 2 Raw FP8 \u2014 ComfyUI",
+  "description": "Generate images with Krea 2 Raw FP8, Qwen3-VL text encoder and Qwen Image VAE",
   "type": "serverless",
   "category": "image",
   "iconUrl": "https://cpjrphpz3t5wbwfe.public.blob.vercel-storage.com/comfy-ui.png",
   "config": {
     "runsOn": "GPU",
-    "containerDiskInGb": 20,
-    "gpuIds": "ADA_24",
+    "containerDiskInGb": 80,
+    "gpuIds": "AMPERE_48",
     "gpuCount": 1,
-    "allowedCudaVersions": ["12.8", "12.9", "13.0", "13.1", "13.2"],
+    "allowedCudaVersions": [
+      "12.8",
+      "12.9",
+      "13.0",
+      "13.1",
+      "13.2"
+    ],
     "env": [
       {
         "key": "COMFY_ORG_API_KEY",
